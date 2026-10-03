@@ -1,0 +1,278 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dreem Shop - المنتجات</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        
+        <div class="logo">Dreem Shop</div>
+        <nav>
+            <a href="index.html">الرئيسية</a>
+            <a href="products.html" aria-current="page">المنتجات</a>
+            <a href="portfolio.html">أعمالنا</a>
+            <a href="about.html">من نحن</a>
+            <a href="contact.html">تواصل معنا</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>نساعدك في اختيار راحتك</h1>
+        <p>أفضل خدمات التسويق والحملات.</p>
+        <a class="btn" href="#">ابدأ الآن</a>
+    </section>
+
+    <section class="filters">
+        <input type="radio" name="filter" id="all" checked>
+        <label for="all">كل الأقسام</label>
+
+        <input type="radio" name="filter" id="clothes">
+        <label for="clothes">ملابس</label>
+
+        <input type="radio" name="filter" id="phones">
+        <label for="phones">موبايلات</label>
+
+        <input type="radio" name="filter" id="shoes">
+        <label for="shoes">أحذية</label>
+    </section>
+
+    <div class="products">
+        <div class="card clothes">
+            <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=400&q=80" alt="تيشيرت رجالي">
+            <h3>تيشيرت رجالي</h3>
+            <div class="price">200 جنيه</div>
+            <button>أضف للسلة</button>
+            <a class="btn" onclick="openDetails(this)">تفاصيل المنتج</a>
+
+        </div>
+
+        <div class="card phones">
+            <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=400&q=80" alt="iPhone 13">
+            <h3>iPhone 13</h3>
+            <div class="price">23,000 جنيه</div>
+            <button>أضف للسلة</button>
+            <a class="btn" onclick="openDetails(this)">تفاصيل المنتج</a>
+
+        </div>
+
+        <div class="card shoes">
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=400&q=80" alt="كوتشي نايك">
+            <h3>كوتشي نايك</h3>
+            <div class="price">1500 جنيه</div>
+            <button>أضف للسلة</button>
+            <a class="btn" onclick="openDetails(this)">تفاصيل المنتج</a>
+
+        </div>
+
+        <div class="card clothes">
+            <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=400&q=80" alt="بنطلون جينز">
+            <h3>بنطلون جينز</h3>
+            <div class="price">350 جنيه</div>
+            <button>أضف للسلة</button>
+            <a class="btn" onclick="openDetails(this)">تفاصيل المنتج</a>
+
+        </div>
+
+    </div>
+
+    <!-- منتج جديد - فئة الملابس -->
+<div class="card clothes">
+    <img src="https://th.bing.com/th/id/R.d78749659a70c585d8eeb04763e8ad4a?rik=%2bQKoEWa5Ru05zg&pid=ImgRaw&r=0" alt="جاكيت جلد">
+    <h3>جاكيت جلد</h3>
+    <div class="price">650 جنيه</div>
+    <button>أضف للسلة</button>
+    <a class="btn" onclick="openDetails(this)">تفاصيل المنتج</a>
+
+</div>
+
+<!-- منتج جديد - فئة الموبايلات -->
+<div class="card phones">
+    <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=400&q=80" alt="Samsung S23">
+    <h3>macbook pro</h3>
+    <div class="price">19,500 جنيه</div>
+    <button>أضف للسلة</button>
+    <a class="btn" onclick="openDetails(this)">تفاصيل المنتج</a>
+
+</div>
+
+<!-- منتج جديد - فئة الأحذية -->
+<div class="card shoes">
+    <img src="file:///C:/Users/pcs/Desktop/Ahmed%20mostafa/download.webp" alt="كوتشي Adidas">
+    <h3>كوتشي Adidas</h3>
+    <div class="price">1750 جنيه</div>
+    <button>أضف للسلة</button>
+    <a class="btn" onclick="openDetails(this)">تفاصيل المنتج</a>
+
+</div>
+
+<!-- منتج جديد - فئة الملابس -->
+<div class="card clothes">
+    <img src="https://cdn.youcan.shop/stores/687be1f9d034e99b473eeaa8a29fdb53/products/Lm6gjDE7ipRhwjnklUS5TeXyWVWSMmFBBwnQvExC.png" alt="هودي شتوي">
+    <h3>هودي شتوي</h3>
+    <div class="price">420 جنيه</div>
+    <button>أضف للسلة</button>
+    <a class="btn" onclick="openDetails(this)">تفاصيل المنتج</a>
+
+</div>
+
+<!-- منتج جديد - فئة الموبايلات -->
+<div class="card phones">
+    <img src="https://telfonak.com/wp-content/uploads/2024/01/xiaomi-11t-colors.webp" alt="Xiaomi Mi 11">
+    <h3>Xiaomi Mi 11</h3>
+    <div class="price">10,900 جنيه</div>
+    <button>أضف للسلة</button>
+    <a class="btn" onclick="openDetails(this)">تفاصيل المنتج</a>
+
+</div>
+
+<!-- ====== ملابس (Clothes) ====== -->
+
+<div class="card clothes">
+    <img src="https://tse4.mm.bing.net/th/id/OIP.ge02PmuTJe1E42PC8LuEIAHaJ4?rs=1&pid=ImgDetMain&o=7&rm=3" 
+         alt="فستان صيفي">
+    <h3>فستان صيفي</h3>
+    <div class="price">300 جنيه</div>
+    <button>أضف للسلة</button>
+    <a class="btn" onclick="openDetails(this)">تفاصيل المنتج</a>
+
+</div>
+
+<div class="card clothes">
+    <img src="https://i.pinimg.com/originals/91/42/6a/91426a7db5e033d61fad8be0c8e102ed.jpg" 
+         alt="سويت شيرت شتوي">
+    <h3>سويت شيرت شتوي</h3>
+    <div class="price">450 جنيه</div>
+    <button>أضف للسلة</button>
+    <a class="btn" onclick="openDetails(this)">تفاصيل المنتج</a>
+
+</div>
+
+
+
+<!-- ====== موبايلات (Phones) ====== -->
+
+<div class="card phones">
+    <img src="https://fdn.gsmarena.com/imgroot/reviews/22/apple-iphone-14-pro-max/lifestyle/-1024w2/gsmarena_002.jpg"
+         alt="iPhone 14 Pro">
+    <h3>iPhone 14 Pro</h3>
+    <div class="price">36,000 جنيه</div>
+    <button>أضف للسلة</button>
+    <a class="btn" onclick="openDetails(this)">تفاصيل المنتج</a>
+
+</div>
+
+<div class="card phones">
+    <img src="https://i0.wp.com/www.myeverydaytech.com/wp-content/uploads/2022/04/Samsung-Galaxy-A53-5G-11.jpg?ssl=1"
+         alt="Samsung A54">
+    <h3>Samsung A54</h3>
+    <div class="price">12,500 جنيه</div>
+    <button>أضف للسلة</button>
+    <a class="btn" onclick="openDetails(this)">تفاصيل المنتج</a>
+
+</div>
+
+
+
+<!-- ====== أحذية (Shoes) ====== -->
+
+<div class="card shoes">
+    <img src="https://images.prismic.io/sportsshoesprod/e5b5bcd8-3765-4135-99d9-d9ef8d22b37d_Puma+-+Brand+Store+-+Everyday+Shoes.png?auto=compress,format&rect=53,28,1345,1554&w=1415&h=1635"
+         alt="حذاء رياضي Puma">
+    <h3>Puma Runner</h3>
+    <div class="price">1350 جنيه</div>
+    <button>أضف للسلة</button>
+    <a class="btn" onclick="openDetails(this)">تفاصيل المنتج</a>
+
+</div>
+
+<div class="card shoes">
+    <img src="https://images.unsplash.com/photo-1584735175097-719d848f8449?auto=format&fit=crop&w=400&q=80"
+         alt="حذاء جلد رسمي">
+    <h3>حذاء جلد رسمي</h3>
+    <div class="price">900 جنيه</div>
+    <button>أضف للسلة</button>
+    <a class="btn" onclick="openDetails(this)">تفاصيل المنتج</a>
+
+</div>
+
+<div class="card shoes">
+    <img src="https://assets.adidas.com/images/w_1880,f_auto,q_auto/cf97046a7a424cd2bcb93abdb34a50db_9366/IG2262_01_standard.jpg"
+         alt="كوتشي Adidas Ultra">
+    <h3>Adidas Ultra</h3>
+    <div class="price">2100 جنيه</div>
+    <button>أضف للسلة</button>
+    <a class="btn" onclick="openDetails(this)">تفاصيل المنتج</a>
+
+</div>
+
+
+
+
+    <footer>
+        <p>© 2025 - جميع الحقوق محفوظة</p>
+    </footer>
+
+    <script>
+        function openDetails(btn) {
+    let card = btn.parentElement;
+    let name = card.querySelector("h3").innerText;
+    let price = card.querySelector(".price").innerText.replace(" جنيه","");
+    let img = card.querySelector("img").src;
+
+    location.href = `product-details.html?name=${name}&price=${price}&img=${img}`;
+}
+
+        (function applyFilterFromUrl(){
+            const params = new URLSearchParams(location.search);
+            let filter = params.get('filter') || (location.hash ? location.hash.replace('#','') : '');
+            filter = filter ? filter.toLowerCase() : '';
+            const allowed = ['all','clothes','phones','shoes'];
+            if (allowed.includes(filter)) {
+                const el = document.getElementById(filter);
+                if (el) el.checked = true;
+                const filtersEl = document.querySelector('.filters');
+                if (filtersEl) filtersEl.scrollIntoView({behavior:'smooth', block:'center'});
+            }
+        })();</script>
+
+        
+        <script>
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+// حفظ
+function saveCart() {
+    localStorage.setItem("cart", JSON.stringify(cart));
+}
+
+// إضافة منتج
+function addToCart(name, price, img) {
+    let item = cart.find(p => p.name === name);
+    if (item) {
+        item.qty += 1;
+    } else {
+        cart.push({ name, price, img, qty: 1 });
+    }
+    saveCart();
+    alert("تمت إضافة المنتج للسلة!");
+}
+
+// تشغيل الأزرار
+document.querySelectorAll(".card button").forEach(btn => {
+    btn.onclick = function () {
+        let card = this.parentElement;
+        let name = card.querySelector("h3").innerText;
+        let price = card.querySelector(".price").innerText.replace(" جنيه", "");
+        let img = card.querySelector("img").src;
+
+        addToCart(name, price, img);
+    };
+});
+</script>
+
+
+</body>
+</html></html>

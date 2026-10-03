@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>تفاصيل المنتج</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.details {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+    display: flex;
+    gap: 20px;
+}
+.details img {
+    width: 45%;
+    border-radius: 8px;
+}
+.info {
+    flex: 1;
+}
+.stars span {
+    font-size: 30px;
+    cursor: pointer;
+    color: gold;
+}
+</style>
+</head>
+<body>
+
+<div class="details">
+    <img id="img">
+    <div class="info">
+        <h1 id="name"></h1>
+        <p id="price"></p>
+
+        <div class="stars" id="stars">
+            <span>★</span><span>★</span><span>★</span>
+            <span>★</span><span>★</span>
+        </div>
+
+        <p id="desc">وصف مختصر للمنتج…</p>
+    </div>
+</div>
+
+<script>
+// تحميل بيانات المنتج من الرابط
+const params = new URLSearchParams(location.search);
+document.getElementById("name").innerText = params.get("name");
+document.getElementById("price").innerText = params.get("price") + " جنيه";
+document.getElementById("img").src = params.get("img");
+
+// نظام التقييم
+document.querySelectorAll("#stars span").forEach((star, i) => {
+    star.onclick = () => {
+        for (let x = 0; x < 5; x++) {
+            document.querySelectorAll("#stars span")[x].style.opacity = x <= i ? "1" : "0.3";
+        }
+        alert("شكراً لتقييمك ⭐");
+    };
+});
+</script>
+</body>
+</html>
